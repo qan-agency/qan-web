@@ -19,7 +19,10 @@
     </div>
     <div class="flex gap-[32px] text-[14px]">
         {#each menuElements as element (element.link)}
-            <button class="border-t-[8px] min-w-[72px] h-[96px] border-[#FA4245]">{element.name}</button>
+            <button class="border-t-[8px] min-w-[72px] h-[96px] 
+                           border-[#FA4245] hover:color-red-500"
+                           onclick={() => window.location.href = element.link}>
+                           {element.name}</button>
         {/each}
     </div>
 </div>
