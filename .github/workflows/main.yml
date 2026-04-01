@@ -1,3 +1,6 @@
+name: auto-deploy
+run-name: automatic deployment
+on: [push]
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
