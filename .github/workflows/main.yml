@@ -13,7 +13,6 @@ jobs:
       - run: npm ci
 
       - run: npm run build
-      - run: ls -R
           
       - uses: peaceiris/actions-gh-pages@v3
         with:
