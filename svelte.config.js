@@ -13,6 +13,9 @@ const config = {
 			strict: true
 		})
 	},
+	paths: {
+		base: "/qan-web"
+	},
 	vitePlugin: {
 		dynamicCompileOptions: ({ filename }) =>
 			filename.includes('node_modules') ? undefined : { runes: true }
