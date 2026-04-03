@@ -1,5 +1,5 @@
 <script>
-	import Menu from "$lib/landing/Menu.svelte";
+	import Menu from "$lib/components/landing/Menu.svelte";
 
 </script>
 <main class="flex flex-col p-[10%] pb-0 uppercase font-extralight">

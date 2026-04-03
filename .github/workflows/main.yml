@@ -10,7 +10,7 @@ jobs:
         with:
           node-version: 24
           
-      - run: npm ci
+      - run: yarn
 
       - run: npm run build
           
