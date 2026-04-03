@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { navigate } from "../../../utils";
+
     interface MenuProps {
         className?: string;
     }
@@ -6,9 +8,9 @@
     let { className } : MenuProps = $props();
 
     let menuElements = [
-        { name: "articles", link: "articles" },
-        { name: "contact", link: "contact" },
-        { name: "about", link: "about" },
+        { name: "articles", link: "/articles" },
+        { name: "contact", link: "/contact" },
+        { name: "about", link: "/about" },
     ];
 </script>
 
@@ -21,7 +23,7 @@
         {#each menuElements as element (element.link)}
             <button class="border-t-[8px] min-w-[72px] h-[96px] 
                            border-[#FA4245] hover:color-red-500"
-                           onclick={() => window.location.href = element.link}>
+                           onclick={() => navigate(element.link)}>
                            {element.name}</button>
         {/each}
     </div>

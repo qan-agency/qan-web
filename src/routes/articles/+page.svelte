@@ -12,7 +12,7 @@
     <Menu />
     <div class="flex flex-col gap-4">
         {#each data.articleList as article (article)}
-            <ArticleBlock title={article.title ?? ""} link={"articles/" + article.slug}
+            <ArticleBlock title={article.title ?? ""} link={"/articles/" + article.slug}
              desc={loremIpsum} />
         {/each}
     </div>

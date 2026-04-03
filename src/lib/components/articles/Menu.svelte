@@ -1,7 +1,9 @@
 <script lang="ts">
+	import { navigate } from "../../../utils";
+
     const routes = [
-        { title: 'Home', url: '' },
-        { title: 'Articles', url: 'articles' }
+        { title: 'Home', url: '/' },
+        { title: 'Articles', url: '/articles' }
     ];
 </script>
 
@@ -10,7 +12,7 @@
     <h1 class="text-[32px] tracking-[20%]">QAN___</h1>
     <div class="flex flex-col">
     {#each routes as route (route.title)}
-        <button onclick={() => window.location.href = route.url } 
+        <button onclick={() => navigate(route.url) } 
                 class="text-left h-12">{ route.title }</button>
     {/each}
     </div>
