@@ -6,9 +6,9 @@
     let { className } : MenuProps = $props();
 
     let menuElements = [
-        { name: "articles", link: "qan-web/articles" },
-        { name: "contact", link: "qan-web/contact" },
-        { name: "about", link: "qan-web/about" },
+        { name: "articles", link: "articles" },
+        { name: "contact", link: "contact" },
+        { name: "about", link: "about" },
     ];
 </script>
 

@@ -1,7 +1,7 @@
 <script lang="ts">
     const routes = [
-        { title: 'Home', url: 'qan-web/' },
-        { title: 'Articles', url: 'qan-web/articles' }
+        { title: 'Home', url: '' },
+        { title: 'Articles', url: 'articles' }
     ];
 </script>
 
